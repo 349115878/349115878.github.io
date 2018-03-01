@@ -18,4 +18,6 @@ tags:
 # **git revert** 和 **git reset** 的区别
  先看图：
  
-![](https://ww3.sinaimg.cn/large/006tNbRwgy1fcr9tu6vdjj30t30ez0y8.jpg)
+
+![](http://mingchuan.wang/img/avatar_g.jpg)
+
