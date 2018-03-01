@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Git 代码回滚
+title:      Git 代码回滚1
 subtitle:   回滚代码的正确姿势1
 date:       2017-02-16
 author:     BY
