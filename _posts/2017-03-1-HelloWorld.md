@@ -1,23 +1,102 @@
 ---
 layout:     post
-title:      Git 代码回滚1
-subtitle:   回滚代码的正确姿势1
-date:       2017-02-16
-author:     BY
+title:      UE4 打资源包（DLC）流程
+subtitle:   pak 热更新 DLC
+date:       2017-02-16
+author:     BY 王明川
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
-    - Mac
+    - Window 7 
     - 终端
-    - Git
+    - UE4 4.9
 ---
 
 
->并不适合阅读的个人文档。
 
-# **git revert** 和 **git reset** 的区别
- 先看图：
  
 
 ![](http://mingchuan.wang/img/avatar_g.jpg)
+
+## 1.什么是资源包？
+资源包也称DLC包（Downloadable Content后续可下载内容，内容容量比较大的也可以说是资料片、扩展包等功能。），当一个处理流程中包含很多包文件且每个包文件中都包含多个资源时，版本控制就会成为问题。然而，如果处理流程支持并鼓励创建多个单独的资源文件，那么则意味着可以独立地迁出每个资源。这减少了该处理流程中版本控制问题及各种瓶颈问题。另外，内容管理系统中的同步更新时间在处理单独资源文件时要比处理包含很多资源的包文件要快，因为对一个单独资源的修改仅需要一个较小的文件更新。
+
+资源包里面只包含”.umap“, ”.uasset“（蓝图和场景资源文件）,AssetRegistry.bin(打资源包时生成)三种格式的文件。在虚幻编辑器中AssetRegistry.bin中包含了资源包里面所有资源的索引列表（目录式的路径），当编辑器启动加载的时候，会将该列表加载到引擎资源注册表里。
+
+```c++
+   // load the cooked data
+	FArrayReader SerializedAssetData;
+	if (FFileHelper::LoadFileToArray(SerializedAssetData, *(FPaths::GameDir() / TEXT("AssetRegistry.bin"))))
+	{
+		// serialize the data with the memory reader (will convert FStrings to FNames, etc)
+		Serialize(SerializedAssetData);
+	}
+```
+	
+
+ UE4 Asset加载可参见这篇文章 http://rokel.me/programming/2017/02/05/ue4-asset-loading-01.html
+
+打完成后，后缀名是” .Pak” 格式的文件。
+
+
+## 2.设置两个打资源包阶段 Launch(启动) 和 patch（补丁）设置
+#### 1.打开ue4 主界面，选择ProjectLanucher 如图
+
+![](http://mingchuan.wang/img/DLC/图片1.png)
+
+#### 2.点击两次“+”号的按钮，生成两个Custom Lanuch Profiles，并分别重命名为Lanuch 和 patch 如下图箭头
+
+![](http://mingchuan.wang/img/DLC/图片2.png)
+
+#### 3.点击Launch 如图按钮 ，进入Launch 编辑页面
+
+![](http://mingchuan.wang/img/DLC/图片3.png)
+
+#### 4.点击按钮Browse,选择要打包的项目，选择“.uproject”文件
+
+![](http://mingchuan.wang/img/DLC/图片4.png)
+
+![](http://mingchuan.wang/img/DLC/图片5.png)
+
+#### 5. 界面选择如下选项  其中Build Configuration 要与VS 中 soluation Configuration 设置一直
+
+![](http://mingchuan.wang/img/DLC/图片6.png)
+
+![](http://mingchuan.wang/img/DLC/图片7.png)
+
+#### 6 点击返回按钮
+
+![](http://mingchuan.wang/img/DLC/图片8.png)
+
+#### 7.patch设置 
+
+![](http://mingchuan.wang/img/DLC/图片9.png)
+
+![](http://mingchuan.wang/img/DLC/图片10.png)
+
+![](http://mingchuan.wang/img/DLC/图片11.png)
+
+## 3.开始项目打包
+#### 打个项目包（可以不打，如果后面报错了，需要回来打一次）
+
+![](http://mingchuan.wang/img/DLC/图片14.png)
+
+## 4.开始打资源包
+#### 1.点击图下按钮 打一个Launch（基础）版本，等待完成并提示成功。如果失败则需要找到原因解决：）
+
+![](http://mingchuan.wang/img/DLC/图片15.png)
+
+#### 5.将资源包放到打包好的项目，Pak文件夹下（没有对应的文件夹请创建）
+
+![](http://mingchuan.wang/img/DLC/图片16.png)
+
+#### 2.添加想要打入包文件到工程的Content文件夹下任意位置。
+#### 3.点击按钮如图，此时生成补丁包
+
+![](http://mingchuan.wang/img/DLC/图片17.png)
+
+#### 4.资源包将生成在 /你的工程名/Saved/StagedBuilds/WindowsNoEditor/你的工程名/Content/Paks/
+
+![](http://mingchuan.wang/img/DLC/图片19.png)
+
 
