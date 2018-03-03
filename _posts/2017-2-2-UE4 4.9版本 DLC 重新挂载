@@ -1,0 +1,177 @@
+---
+layout:     post
+title:      UE4 4.9版本 DLC 重新挂载
+subtitle:   DLC 热更新 Pak
+date:       2017-02-16
+author:     BY
+header-img: img/post-bg-debug.png
+catalog: true
+tags:
+    - Mac
+    - 终端
+    - Git
+---
+
+
+UE4 4.9 版本 加载资源包（.pak）存在Bug ， 当工程中添加了3个以上的pak包，包里面存在相同的资源，UE4编辑器将该资源加载到资源注册表中，读取该资源并不是版本号最新的哪一个，该资源读取是混乱的。本文在不改变引擎代码的前提下修改这个问题。即重新挂载pak，读入到资源注册表中。
+
+.h 
+```
+#pragma once
+
+#include "../PakFile/Public/IPlatformFilePak.h"
+#include "LoadPakResourse.generated.h"
+
+UCLASS()
+class ULoadPakResourse : public UObject
+{
+	GENERATED_BODY()
+
+	void GetPaksUnderGameContentFolder(TArray<FString>& OutPakFolders);
+
+	void FindAllPakFiles(IPlatformFile* LowLevelFile, const TArray<FString>& PakFolders, TArray<FString>& OutPakFiles);
+
+	void FindPakFilesInDirectory(IPlatformFile* LowLevelFile, const TCHAR* Directory, TArray<FString>& OutPakFiles);
+
+	bool Mount(const TCHAR* InPakFilename, uint32 PakOrder, const TCHAR* InPath /*= NULL*/);
+
+	int32 PakMaxOrder = 100000000;
+
+	TArray<FString> AllMountFileList;
+
+public:
+	ULoadPakResourse();
+
+	~ULoadPakResourse();
+
+	void LoadPakFile();
+
+	TArray<FString> GetAllMountFile();
+
+};
+```
+.cpp
+
+```
+#include "VRLogicPluginPrivatePCH.h"
+#include "LoadPakResourse.h"
+#include "Kismet/GameplayStatics.h"
+#include "AssetRegistryModule.h"
+#include "IAssetRegistry.h"
+#include "GenericPlatformChunkInstall.h"
+
+
+ULoadPakResourse::ULoadPakResourse()
+{
+}
+
+ULoadPakResourse::~ULoadPakResourse()
+{
+}
+
+TArray<FString> ULoadPakResourse::GetAllMountFile()
+{
+	return AllMountFileList;
+}
+
+void ULoadPakResourse::LoadPakFile()
+{
+	IPlatformFile& PlatformFile = FPlatformFileManager::Get().GetPlatformFile();
+	FPakPlatformFile* PakPlatformFile = new FPakPlatformFile();
+	PakPlatformFile->Initialize(&PlatformFile, TEXT(""));
+
+	TArray<FString> PakFolders;
+	GetPaksUnderGameContentFolder(PakFolders);
+	TArray<FString> FoundPakFiles;
+	FindAllPakFiles(&PlatformFile, PakFolders, FoundPakFiles);
+	FoundPakFiles.Sort(TGreater<FString>());
+
+	for (int32 PakFileIndex = 0; PakFileIndex < FoundPakFiles.Num(); PakFileIndex++)
+	{
+		//Pak文件路径  
+		const FString PakFilename = FoundPakFiles[PakFileIndex];     
+		if (FPaths::FileExists(PakFilename))
+		{
+			FPakFile PakFile(&PlatformFile, *PakFilename, false);
+			if (PakPlatformFile->Mount(*PakFilename, PakMaxOrder--, NULL))
+			{
+				TArray<FString> FileList;
+				PakFile.FindFilesAtPath(FileList, *PakFile.GetMountPoint(), true, false, true);
+				AllMountFileList.Append(FileList);
+
+				UE_LOG(LogClass, Error, TEXT("Mount Success"));
+			}
+			else
+			{
+				UE_LOG(LogClass, Error, TEXT("Mount Failed"));
+			}
+		}
+	}
+}
+
+void ULoadPakResourse::GetPaksUnderGameContentFolder(TArray<FString>& OutPakFolders)
+{
+	FString GameContentPath = FPaths::GameContentDir();
+	GameContentPath = FPaths::ConvertRelativePathToFull(GameContentPath + TEXT("ResourcePackage"));
+	OutPakFolders.Add(GameContentPath);
+}
+
+void ULoadPakResourse::FindAllPakFiles(IPlatformFile* LowLevelFile, const TArray<FString>& PakFolders, TArray<FString>& OutPakFiles)
+{
+	// Find pak files from the specified directories.
+	for (int32 FolderIndex = 0; FolderIndex < PakFolders.Num(); ++FolderIndex)
+	{
+		FindPakFilesInDirectory(LowLevelFile, *PakFolders[FolderIndex], OutPakFiles);
+	}
+}
+
+void ULoadPakResourse::FindPakFilesInDirectory(IPlatformFile* LowLevelFile, const TCHAR* Directory, TArray<FString>& OutPakFiles)
+{
+	// Helper class to find all pak files.
+	class FPakSearchVisitor : public IPlatformFile::FDirectoryVisitor
+	{
+		TArray<FString>& FoundPakFiles;
+		IPlatformChunkInstall* ChunkInstall;
+	public:
+		FPakSearchVisitor(TArray<FString>& InFoundPakFiles, IPlatformChunkInstall* InChunkInstall)
+			: FoundPakFiles(InFoundPakFiles)
+			, ChunkInstall(InChunkInstall)
+		{}
+		virtual bool Visit(const TCHAR* FilenameOrDirectory, bool bIsDirectory)
+		{
+			if (bIsDirectory == false)
+			{
+				FString Filename(FilenameOrDirectory);
+				if (FPaths::GetExtension(Filename) == TEXT("pak"))
+				{
+					// if a platform supports chunk style installs, make sure that the chunk a pak file resides in is actually fully installed before accepting pak files from it
+					if (ChunkInstall)
+					{
+						FString ChunkIdentifier(TEXT("pakchunk"));
+						FString BaseFilename = FPaths::GetBaseFilename(Filename);
+						if (BaseFilename.StartsWith(ChunkIdentifier))
+						{
+							int32 DelimiterIndex = 0;
+							int32 StartOfChunkIndex = ChunkIdentifier.Len();
+
+							BaseFilename.FindChar(TEXT('-'), DelimiterIndex);
+							FString ChunkNumberString = BaseFilename.Mid(StartOfChunkIndex, DelimiterIndex - StartOfChunkIndex);
+							int32 ChunkNumber = 0;
+							TTypeFromString<int32>::FromString(ChunkNumber, *ChunkNumberString);
+							if (ChunkInstall->GetChunkLocation(ChunkNumber) == EChunkLocation::NotAvailable)
+							{
+								return true;
+							}
+						}
+					}
+					FoundPakFiles.Add(Filename);
+				}
+			}
+			return true;
+		}
+	};
+	// Find all pak files.
+	FPakSearchVisitor Visitor(OutPakFiles, FPlatformMisc::GetPlatformChunkInstall());
+	LowLevelFile->IterateDirectoryRecursively(Directory, Visitor);
+}
+```
