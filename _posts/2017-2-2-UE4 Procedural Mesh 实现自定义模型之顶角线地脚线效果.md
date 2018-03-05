@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      UE4 4.9版本 DLC 重新挂载
-subtitle:   DLC 热更新 Pak
+title:      UE4 Procedural Mesh 实现顶角线地脚线效果
+subtitle:   Procedural Mesh
 date:       2017-02-16
-author:     BY
+author:     Trum
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
