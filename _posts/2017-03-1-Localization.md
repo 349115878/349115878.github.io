@@ -51,7 +51,7 @@ LocRes 可将翻译后的文本存储为二进制格式并由系统加载。LocR
 
 系统会根据项目设置和当前 Culture 选择加载 LocRes 文件。LocRes 中对应当前文化的本地化文本可以和 LocRes 中对应当前所有文化的父文化的本地化文本一起使用。这样既可以针对某一语言提供一般性翻译，同时还能针对某一区域提供更加具体的翻译。举一个基本的例子，假设有一个目标中包含文本 “Color” 并支持 “en”（英语）和 “en-UK”（英语，英国地区）的 Culture，那么 “en” LocRes 可能会将 “Color” 本地化成 “Color”，而 “en-UK” LocRes 可能会采用 “Colour” 这一本地化文本。如果用户切换到 “en-CA”（英语，加拿大地区），但 “en-CA” 的 LocRes 缺少对于 “Color” 的本地化信息，那么将会使用 “en” LocRes 里的 “Color”。
 
-From： https://docs-origin.unrealengine.com/latest/CHN/Gameplay/Localization/Overview/index.html
+上面概述 From： https://docs-origin.unrealengine.com/latest/CHN/Gameplay/Localization/Overview/index.html
 
 ## 本地化流程
 
