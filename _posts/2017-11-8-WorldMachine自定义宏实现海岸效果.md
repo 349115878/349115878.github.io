@@ -2,7 +2,7 @@
 layout:     post
 title:      WorldMachine自定义宏实现海岸效果
 subtitle:   WorldMachine
-date:       2017-02-16
+date:       2017-11-8
 author:     Trum
 header-img: img/post-bg-debug.png
 catalog: true
