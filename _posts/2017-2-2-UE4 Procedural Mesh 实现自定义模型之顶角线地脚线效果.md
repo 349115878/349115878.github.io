@@ -68,3 +68,5 @@ raw_face_struct raw_faces[] =
 
 ## 优化
 场景中出现50堵墙，那个生成的顶角线和地脚线的数量将是至少200个（相交的端点出已删除优化），帧数严重下降。必经ProceduralMesh 是UE4的测试的功能，性能远低于StaticMesh。在万能的github上找到了一个大佬的一段代码 RuntimeMeshComponent，同样具备ProceduralMesh的加减乘除功能。链接：https://github.com/Koderz/RuntimeMeshComponent ，替换了ProceduralMeshComponent，帧数有了明显的提升可以再极限情况下的20帧提升到了30帧...UE4这块国外大佬还是牛逼啊！认真研究大佬代码。
+
+图片来源：Vidahouse
