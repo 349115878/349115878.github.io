@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      ProjectWing2 场景优化
-subtitle:   场景优化
-date:       2017-02-16
+title:      ProjectWing2 场景优化
+subtitle:   场景优化
+date:       2017-02-16
 author:     Trum
 header-img: img/post-bg-debug.png
 catalog: true
@@ -11,7 +11,6 @@ tags:
     - 终端
     - Git
 ---
-
 
 # ProjectWing2性能优化
 根据要求此文档记录ProjectWing2项目 性能优化历程：
