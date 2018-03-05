@@ -7,9 +7,8 @@ author:     Trum
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
-    - Mac
-    - 终端
-    - Git
+    - UE4
+    - PorceduralMesh
 ---
 
 # UE4 Procedural Mesh 实现顶角线地脚线效果
