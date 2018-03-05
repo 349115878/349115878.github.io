@@ -2,14 +2,13 @@
 layout:     post
 title:      UE4 本地化--多语言切换
 subtitle:   Localization 本地化 多语言
-date:       2017-02-16
+date:       2017-03-3
 author:     Trum
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
-    - Mac
-    - 终端
-    - Git
+    - UE4
+    - Localization
 ---
 
 
