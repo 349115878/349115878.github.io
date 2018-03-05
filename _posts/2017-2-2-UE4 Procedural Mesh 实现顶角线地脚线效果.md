@@ -21,4 +21,9 @@ tags:
 
 #### 截面效果图
 
-![](http://mingchuan.wang/img/boundary/show_1.png)
+![](http://mingchuan.wang/img/boundary/1.png)
+![](http://mingchuan.wang/img/boundary/2.png)
+![](http://mingchuan.wang/img/boundary/3.png)
+![](http://mingchuan.wang/img/boundary/4.png)
+![](http://mingchuan.wang/img/boundary/5.png)
+![](http://mingchuan.wang/img/boundary/6.png)
