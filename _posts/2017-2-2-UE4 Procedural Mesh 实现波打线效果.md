@@ -51,4 +51,6 @@ tags:
 
 ## 最终看一下效果图
 
-![](http://mingchuan.wang/img/boundary/show_2.png)
+![](http://mingchuan.wang/img/boundary/show_3.png)
+
+图片来源于Vidahouse
