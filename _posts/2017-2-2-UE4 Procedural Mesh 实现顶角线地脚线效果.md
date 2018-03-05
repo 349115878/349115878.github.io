@@ -19,15 +19,15 @@ tags:
 #### 2.选中一段（或全选）更换材质，删除。
 #### 3.任意调整侧面的形状，高度，宽度。
 
-#### 截面效果图
-###### 顶角线展示：
+## 截面效果图
+#### 顶角线展示：
 ![](http://mingchuan.wang/img/Line/Line_1.png)
 
-###### 地脚线展示：
+#### 地脚线展示：
 ![](http://mingchuan.wang/img/Line/Line_2.png)
 ![](http://mingchuan.wang/img/Line/Line_4.png)
 
-###### 单个顶角线不同位置展示：
+#### 单个顶角线不同位置展示：
 ![](http://mingchuan.wang/img/Line/Line_5.png)
 ![](http://mingchuan.wang/img/Line/Line_6.png)
 
