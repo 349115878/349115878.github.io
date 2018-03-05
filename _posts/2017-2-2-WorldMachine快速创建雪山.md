@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      ProjectWing2 场景优化
-subtitle:   场景优化
+title:      WorldMachine 快速实现雪山
+subtitle:   WorldMachine
 date:       2017-02-16
-author:     BY
+author:     Trum
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
