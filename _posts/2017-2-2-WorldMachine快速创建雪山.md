@@ -23,7 +23,7 @@ tags:
 
 ![](http://mingchuan.wang/img/WM_SnowMountain/3.png)
 
-每个节点就不一一讲解了，源文件如下：源文件的效果可能和上面两张图有所出入可以通过调整上面的箭头的mash来修改。
+每个节点就不一一讲解了，源文件如下：源文件的效果可能和上面两张图有所出入可以通过调整上面的箭头的mask来修改。
 
 文件下载链接：https://pan.baidu.com/s/1w9n3Ud034fk7BtSKzt-4kQ
 
