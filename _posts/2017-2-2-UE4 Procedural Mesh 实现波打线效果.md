@@ -19,7 +19,7 @@ tags:
 
 #### 2.在运行时实现可选中单个波打线（或全部）更换材质，删除功能。
 
-![](http://mingchuan.wang/img/boundary/show1.png)
+![](http://mingchuan.wang/img/boundary/show_1.png)
 
 #### 3.波打线之间无缝连接，材质的方向统一朝向墙。
 
@@ -51,4 +51,4 @@ tags:
 
 ## 最终看一下效果图
 
-![](http://mingchuan.wang/img/boundary/show2.png)
+![](http://mingchuan.wang/img/boundary/show_2.png)
