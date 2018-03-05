@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      ProjectWing2 场景优化
+title:     ProjectWing2 场景优化
 subtitle:   场景优化
 date:       2017-02-16
 author:     BY
