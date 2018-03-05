@@ -11,3 +11,19 @@ tags:
     - 终端
     - Git
 ---
+
+# UE4 Procedural Mesh 实现顶角线地脚线效果
+
+## 需求
+#### 1.一键生成围绕墙一圈的顶角线和地脚线
+#### 2.选中一段（或全选）更换材质，删除。
+#### 3.任意调整侧面的形状，高度，宽度。
+
+#### 截面效果图
+
+![](http://mingchuan.wang/img/boundary/1.png)
+![](http://mingchuan.wang/img/boundary/2.png)
+![](http://mingchuan.wang/img/boundary/3.png)
+![](http://mingchuan.wang/img/boundary/4.png)
+![](http://mingchuan.wang/img/boundary/5.png)
+![](http://mingchuan.wang/img/boundary/6.png)
