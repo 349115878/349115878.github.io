@@ -7,7 +7,7 @@ author:     Trum
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
-- Worldmachine
+- WorldMachine
 ---
 
 
