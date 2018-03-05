@@ -13,10 +13,18 @@ tags:
 ---
 
 
-# ProjectWing2性能优化
-根据要求此文档记录ProjectWing2项目 性能优化历程：
-## 优化前分析
-ctril + shift + ，打开GPU检测工具对ProjectWing2项目检测。
-平行光作为太阳在400000*400000*100000的 LightmassImportanceVolume作用下，发现Scene中ShadowDepths的消耗是最大的。所以这个项目中阴影和效率有很大的关系。普通来说不开灯光的阴影比开的阴影要便宜20倍左右，尤其是当你的物件数量都是一个倍乘的系数越多就越耗性能。继续跟进发现shadowDepths下面场景中的树的阴影消耗非常的大。
+# WorldMachine 快速实现雪山
+## 效果图
 
-![](http://mingchuan.wang/img/ProjectWing/2.png)
+![](http://mingchuan.wang/img/WM_SnowMountain/1.png)
+![](http://mingchuan.wang/img/WM_SnowMountain/2.png)
+
+## 实现代码和下载链接如下
+
+![](http://mingchuan.wang/img/WM_SnowMountain/3.png)
+
+每个节点就不一一讲解了，原文件如下：
+
+文件下载链接：https://pan.baidu.com/s/1w9n3Ud034fk7BtSKzt-4kQ
+
+另外可以选择不同的分辨率导出两个Mesh，分别对应高模和低模，烘焙出法线贴图，在根据splatmap图上材质，就可以作为StaticMesh导入引擎中使用。
