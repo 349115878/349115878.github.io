@@ -8,7 +8,7 @@ header-img: img/post-bg-debug.png
 catalog: true
 tags:
     - UE4
-    - ProceduralMesh
+    - Procedural Mesh
 ---
 
 # 波打线的实现思路
