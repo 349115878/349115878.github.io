@@ -27,4 +27,4 @@ tags:
 
 文件下载链接：https://pan.baidu.com/s/1w9n3Ud034fk7BtSKzt-4kQ
 
-另外可以选择不同的分辨率导出两个Mesh，分别对应高模和低模，烘焙出法线贴图，在根据splatmap图上材质，就可以作为StaticMesh导入引擎中使用。
+另外可以选择不同的分辨率导出两个Mesh，分别对应高模和低模，烘焙出法线贴图，在根据splatmap图上材质，就可以作为StaticMesh导入引擎中使用而不是高度图，这样根据需求使用很灵活。
