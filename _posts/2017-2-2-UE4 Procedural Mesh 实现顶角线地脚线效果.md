@@ -23,12 +23,15 @@ tags:
 
 ![](http://mingchuan.wang/img/Line/Line_1.png)
 ![](http://mingchuan.wang/img/Line/Line_2.png)
-![](http://mingchuan.wang/img/Line/Line_3.png)
 ![](http://mingchuan.wang/img/Line/Line_4.png)
 ![](http://mingchuan.wang/img/Line/Line_5.png)
 ![](http://mingchuan.wang/img/Line/Line_6.png)
 
 ## 原理
+
+![](http://mingchuan.wang/img/Line/Point.png)
+
+
 
 
 ## 优化
