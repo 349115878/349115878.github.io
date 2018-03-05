@@ -27,3 +27,8 @@ tags:
 ![](http://mingchuan.wang/img/Line/Line_4.png)
 ![](http://mingchuan.wang/img/Line/Line_5.png)
 ![](http://mingchuan.wang/img/Line/Line_6.png)
+
+## 原理
+
+## 优化
+场景中出现50堵墙，那个生成的顶角线和地脚线的数量将是至少200个（相交的端点出已删除优化）。必经ProceduralMesh 是UE4的测试的功能，性能远低于StaticMesh。在
