@@ -13,7 +13,6 @@ tags:
 
 # ProjectWing 项目介绍
 Project项目是为意大利 Agusta-westland 直升机厂商定制的 AW609型号直升机虚拟现实项目展示。
-
 ![](http://mingchuan.wang/img/ProjectWing/4.png)
 
 官方网站： https://www.windriver.com/customers/customer-success/aerospace-defense/agusta-westland/
