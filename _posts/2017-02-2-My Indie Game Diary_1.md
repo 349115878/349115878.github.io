@@ -14,4 +14,12 @@ tags:
 # My Indie Game Diary 第一篇 场景地形搭建
 ## 先上UE4效果图
 
-![](http://mingchuan.wang/img/WM_Beach/1.png)
+- 雪山
+
+![](http://mingchuan.wang/img/My Indie Game Diary/1.png)
+![](http://mingchuan.wang/img/My Indie Game Diary/2.png)
+
+- 岛屿
+
+![](http://mingchuan.wang/img/My Indie Game Diary/3.png)
+
