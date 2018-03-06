@@ -1,14 +1,15 @@
 ---
 layout:     post
 title:      UE4 Procedural Mesh 实现波打线效果
-subtitle:   参数化建模
+subtitle:   Procedural Mesh 参数化建模
 date:       2017-04-5
 author:     Trum
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
-    - UE4
-    - Procedural Mesh
+- UE4
+- Procedural Mesh
+- 参数化建模
 ---
 
 # 波打线的实现思路
