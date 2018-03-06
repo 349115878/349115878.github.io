@@ -1,14 +1,15 @@
 ---
 layout:     post
 title:      UE4 Procedural Mesh 实现顶角线地脚线效果
-subtitle:   Procedural Mesh
-date:       2017-02-16
+subtitle:   Procedural Mesh 参数化建模
+date:       2017-02-16
 author:     Trum
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
-    - UE4
-    - Procedural Mesh
+- UE4
+- Procedural Mesh
+- 参数化建模
 ---
 
 # UE4 Procedural Mesh 实现顶角线地脚线效果
