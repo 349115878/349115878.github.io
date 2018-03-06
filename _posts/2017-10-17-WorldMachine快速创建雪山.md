@@ -23,7 +23,7 @@ tags:
 
 每个节点就不一一讲解了毕竟不是WorldMachine教程，源文件如下：
 
-文件下载链接：https://pan.baidu.com/s/1w9n3Ud034fk7BtSKzt-4kQ
+文件下载链接：https://pan.baidu.com/s/18vgGas42MzV9tvuwc7YMXg 中的 SingleSnowMountainOut.tmd
 
 源文件的效果可能和上面两张图有所出入，可以通过调整上面的箭头的mask来修改。
 
