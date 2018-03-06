@@ -27,6 +27,5 @@ tags:
 
 源文件如下：
 
-文件下载链接：https://pan.baidu.com/s/18vgGas42MzV9tvuwc7YMXg 中的 MyIsland.dev
-
+文件下载链接：https://pan.baidu.com/s/18vgGas42MzV9tvuwc7YMXg 中的 MyIsland.dev，把MyIsland.dev 放到 ...\World Machine Documents\Macros\Coverage Library 文件夹下。
 海岸的实现将在后续的系列文章《My Indie Game Diary》中一起分享。-_-
