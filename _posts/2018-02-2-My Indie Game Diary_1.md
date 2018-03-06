@@ -17,7 +17,7 @@ tags:
 - 雪山
 
 ![](http://mingchuan.wang/img/MyIndieGameDiary/4.png)
-![](http://mingchuan.wang/img/MyIndieGameDiary/5png)
+![](http://mingchuan.wang/img/MyIndieGameDiary/5.png)
 
 - 岛屿
 
