@@ -16,11 +16,11 @@ tags:
 
 - 雪山
 
-![](http://mingchuan.wang/img/My Indie Game Diary/1.png)
+![](http://mingchuan.wang/img/MyIndieGameDiary/1.png)
 
-![](http://mingchuan.wang/img/My Indie Game Diary/2.png)
+![](http://mingchuan.wang/img/MyIndieGameDiary/2.png)
 
 - 岛屿
 
-![](http://mingchuan.wang/img/My Indie Game Diary/3.png)
+![](http://mingchuan.wang/img/MyIndieGameDiary/3.png)
 
