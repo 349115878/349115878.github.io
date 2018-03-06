@@ -12,14 +12,14 @@ tags:
 ---
 
 # ProjectWing 项目介绍
-Project项目是为意大利 Agusta-westland 直升机厂商定制的 AW609型号直升机项目展示，支持虚拟现实。
+Project项目是为意大利 Agusta-westland 直升机厂商定制的 AW609型号直升机虚拟现实项目展示。
 
 官方网站： https://www.windriver.com/customers/customer-success/aerospace-defense/agusta-westland/
 
 本项目由我和另一个同事合作完成，我主要负责飞机飞行模拟逻辑实现，舱内交互动画实现，Sequence动画实现，Bug修复，场景性能优化，VR功能实现。本文只介绍场景性能优化方面的经历，OK，那就开始吧！
 
 # ProjectWing2性能优化
-根据要求此文档记录ProjectWing2项目 性能优化历程：
+此文档记录ProjectWing2项目 性能优化历程：
 ## 优化前分析
 ctril + shift + ，打开GPU检测工具对ProjectWing2项目检测。
 平行光作为太阳在400000*400000*100000的 LightmassImportanceVolume作用下，发现Scene中ShadowDepths的消耗是最大的。所以这个项目中阴影和效率有很大的关系。普通来说不开灯光的阴影比开的阴影要便宜20倍左右，尤其是当你的物件数量都是一个倍乘的系数越多就越耗性能。继续跟进发现shadowDepths下面场景中的树的阴影消耗非常的大。
