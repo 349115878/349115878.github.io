@@ -23,7 +23,7 @@ tags:
 
 - 宏定义
 
-![](http://mingchuan.wang/img/WM_Beach/2.png)
+![](http://mingchuan.wang/img/WM_Beach/3.png)
 
 源文件如下：
 
