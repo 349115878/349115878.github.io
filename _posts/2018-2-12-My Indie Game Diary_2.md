@@ -35,6 +35,9 @@ tags:
 - 导出配置
 
 ![](http://mingchuan.wang/img/MyIndieGameDiary_2/4.png)
+
+- 导出路径和名字自己根据需要设置。
+
 ![](http://mingchuan.wang/img/MyIndieGameDiary_2/5.png)
 
 ## 导出高模
@@ -46,5 +49,12 @@ tags:
 - 导出配置
 
 ![](http://mingchuan.wang/img/MyIndieGameDiary_2/8.png)
+
+- 导出路径和名字自己根据需要设置，同上。
+
 ![](http://mingchuan.wang/img/MyIndieGameDiary_2/7.png)
+
+## 结束
+
+- 完成之后在你导出的路径下就有两个文件了，一个高模一个低模，在下一篇 《My Indie Game Diary 第二篇》中展示在substance painter 中用这两个高低模烘焙贴图的流程。
 
