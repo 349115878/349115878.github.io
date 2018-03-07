@@ -54,6 +54,6 @@ tags:
 ![](http://mingchuan.wang/img/MyIndieGameDiary_4/10.png)
 ![](http://mingchuan.wang/img/MyIndieGameDiary_4/5.png)
 
-导入UE4 选项
+导入UE4 选项,选中刚刚导入的Skeleton Mesh
 
 ![](http://mingchuan.wang/img/MyIndieGameDiary_4/11.png)
