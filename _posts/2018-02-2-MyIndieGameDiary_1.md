@@ -23,3 +23,5 @@ tags:
 
 ![](http://mingchuan.wang/img/MyIndieGameDiary/3.png)
 ![](http://mingchuan.wang/img/MyIndieGameDiary/6.png)
+
+这部分内容很多，需要写的东西太多，本人有时间在跟新，哈哈哈~~~~~
