@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      My Indie Game Diary 第二篇
-subtitle:   高模低模导出到Substance Painter流程
+subtitle:   3dmax导出高模低模(到Substance Painter烘焙)流程
 date:       2018-2-2
 author:     Trum
 header-img: img/post-bg-debug.png
@@ -11,7 +11,7 @@ tags:
 - 3dmax
 ---
 
-# My Indie Game Diary 第二篇 高模低模导入Substance Painter流程
+# My Indie Game Diary 第二篇 高模低模(到Substance Painter烘焙)流程
 
 ## 准备工作
 - 首先在3dmax（或Maya）中准备好高模和低模，由于模型还在完善过程中，模型文件我就先不分享了，做好了统一分享。
