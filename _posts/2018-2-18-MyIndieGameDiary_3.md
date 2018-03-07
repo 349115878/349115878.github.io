@@ -111,7 +111,7 @@ ctrl + shift +E 打开如下图配置指定文件夹，Export
 
 完成！
 
-## 来展示一下我的小怪效果图！
+## 来展示一下我的小怪最终效果图！
 
 ![](http://mingchuan.wang/img/MyIndieGameDiary_3/19.png)
 
