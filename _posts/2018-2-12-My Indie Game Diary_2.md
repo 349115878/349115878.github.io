@@ -17,7 +17,7 @@ tags:
 - 低模分好UV（我使用的是Unfold3D，非常高效）,在层管理器中,将低模分在一个层中，并将每个模型名称后缀加上"_low"。
 - 高模部分，在层管理器中,将高模分在一个层中,将每个模型名称后加上"_high"。
 
-![](http://mingchuan.wang/img/MyIndieGameDiary/1.png)
+![](http://mingchuan.wang/img/MyIndieGameDiary_2/1.png)
 
 注意：1.给后缀改名添加"_low"和"_high"是因为在substance Painter 中烘焙贴图，substance Painter 可以根据后缀名来区分模型部分那个是高模那个是低模，按名称匹配，这样定位会更准确。 
 2."_low"和"_high"不要写错了，一定要和substance中相对应（本人曾经在这错把high写成height...浪费了好长时间 -_-!）。
