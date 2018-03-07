@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      ProjectWing2 场景优化
-subtitle:   场景优化
+title:      ProjectWing 性能优化
+subtitle:   性能优化
 date:       2017-5-20
 author:     Trum
 header-img: img/post-bg-debug.png
@@ -20,7 +20,7 @@ Project项目是为意大利 Agusta-westland 直升机厂商定制的 AW609型�
 
 本项目由我和另一个同事合作完成，我主要负责飞机飞行模拟逻辑实现，舱内交互动画实现，Sequence动画实现，Bug修复，场景性能优化，VR功能实现。本文只介绍场景性能优化方面的经历，OK，那就开始吧！
 
-# ProjectWing2性能优化
+# ProjectWing性能优化
 此文档记录ProjectWing2项目 性能优化历程：
 ## 优化前分析
 ctril + shift + ，打开GPU检测工具对ProjectWing2项目检测。
