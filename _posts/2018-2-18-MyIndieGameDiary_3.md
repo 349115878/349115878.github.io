@@ -91,7 +91,7 @@ ctrl + shift +E 打开如下图配置指定文件夹，Export
 
 可以查看这个链接：http://polycount.com/discussion/177780/difference-between-substance-painters-average-normals-baking-and-a-traditional-cage-workflow
 
-简要总结就是：平均法线产生扭曲的细节。非平均烘烤的浮动细节偏少（但不完美），但明显的接缝。
+简要总结就是：平均法线产生扭曲的细节。非平均烘烤的浮动细节偏少（但不完美），但有明显的接缝。
 
 剩下的流程和上面是一样的了，就不重复介绍了。
 
