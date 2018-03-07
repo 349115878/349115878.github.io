@@ -115,4 +115,5 @@ ctrl + shift +E 打开如下图配置指定文件夹，Export
 
 ![](http://mingchuan.wang/img/MyIndieGameDiary_3/19.png)
 
+注：由于小怪还在修改过程中，有很多地方需要完善，源文件先不分享了...
 
