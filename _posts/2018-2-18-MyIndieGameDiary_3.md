@@ -111,9 +111,19 @@ ctrl + shift +E 打开如下图配置指定文件夹，Export
 
 完成！
 
+## 贴图导出
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/20.png)
+
 ## 来展示一下我的小怪最终效果图！
 
+Substance painter 中：
+
 ![](http://mingchuan.wang/img/MyIndieGameDiary_3/19.png)
+
+UE4 中：
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/21.png)
 
 注：由于小怪还在修改过程中，有很多地方需要完善，源文件先不分享了...
 
