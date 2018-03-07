@@ -40,12 +40,15 @@ tags:
 - 上图2，可以UV的容差值，建议设置大一些 16。
 - 上图3，添加高模。
 
-![](http://mingchuan.wang/img/MyIndieGameDiary_3/7.png)
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/5.png)
 
 - 上图4，设置远近边。
 - 上图5，根据名字匹配，这就是在3dmax 中为高低模定义后缀名"_high","_low"。
 - 上图6，只选择烘焙normal。
 - 上图7，烘焙所有贴图集，这里我们在低模材质定义了个两个，这两个同时烘焙，substance painter 更老的版本没有之歌功能，那只能一个个烘焙了。
 
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/7.png)
+
+烘焙成功之后如上图，可以点击右上角切换另一套材质查看
 
 ## 
