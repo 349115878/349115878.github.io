@@ -51,4 +51,68 @@ tags:
 
 烘焙成功之后如上图，可以点击右上角切换另一套材质查看
 
-## 
+## 烘焙平均法线（Average） 贴图
+
+在次点击baketexture按钮，取消选择Average Normal
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/15.png)
+
+在ID中选择Material Color 这是按照高模上的材质颜色来辨别，生成ID贴图（作用见上一篇文章已阐述）。
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/9.png)
+
+根据名字辨别
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/10.png)
+
+根据名字辨别，烘焙所有的贴图集，根据机器配置和贴图分辨率的不同，需要等一段时间。
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/11.png)
+
+烘焙完成之后如下图，可以切换右上角查看另外一套贴图
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/12.png)
+
+## 导出平均法线（NO_Average） 贴图
+
+ctrl + shift +E 打开如下图配置指定文件夹，Export
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/13.png)
+
+导出后文件夹中会有导出的贴图
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/14.png)
+
+## 烘焙非平均法线NO_Average Normal贴图
+
+为什么要NO_Average 和Average 各烘焙一次？为什么不只烘焙一次就行？
+
+答：当然是效果好了！（和没说一样-__-)
+
+可以查看这个链接：http://polycount.com/discussion/177780/difference-between-substance-painters-average-normals-baking-and-a-traditional-cage-workflow
+
+简要总结就是：平均法线产生扭曲的细节。非平均烘烤的浮动细节偏少（但不完美），但明显的接缝。
+
+剩下的流程和上面是一样的了，就不重复介绍了。
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/8.png)
+
+## 替换Average Normal 贴图
+
+烘焙完成之后将我们刚刚导出的平均法线贴图（两套）的ambient，curvature，normal三张拖拽到substance painter编辑器中。导入到substance painter中。
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/16.png)
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/17.png)
+
+讯中对应才材质集，将对应的贴图进行替换。
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/18.png)
+
+完成！
+
+## 来展示一下我的小怪效果图！
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_3/19.png)
+
+
