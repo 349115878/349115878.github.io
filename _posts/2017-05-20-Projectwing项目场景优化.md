@@ -18,7 +18,16 @@ Project项目是为意大利 Agusta-westland 直升机厂商定制的 AW609型�
 
 官方网站： https://www.windriver.com/customers/customer-success/aerospace-defense/agusta-westland/
 
-本项目由我和另一个同事合作完成，我主要负责飞机飞行模拟逻辑实现，舱内交互动画实现，Sequence动画实现，Bug修复，场景性能优化，VR功能实现。本文只介绍场景性能优化方面的经历，OK，那就开始吧！
+本项目由我和另一个同事合作完成，我主要负责飞机飞行模拟逻辑实现，舱内交互动画实现，Sequence动画实现，Bug修复，场景性能优化，VR功能实现。
+项目的场景是用UE4官方Demo（用户也说OK），当时是2016年的11月份接到这个项目，当时我还没用或Worldmachine，在经历这个项目之后意识到一个高端的场景对应这样的项目是多么的重要，才那开始学习Worldmachine.
+
+Demo视频展示(pc演示效果更好)： https://pan.baidu.com/s/1AUowCtVkLiLgB__AddRU1A
+
+本文只介绍场景性能优化方面的经历，OK，那就开始吧！
+
+
+
+
 
 # ProjectWing性能优化
 此文档记录ProjectWing2项目 性能优化历程：
