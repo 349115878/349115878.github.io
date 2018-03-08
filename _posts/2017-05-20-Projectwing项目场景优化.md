@@ -80,12 +80,20 @@ GPU分析
 
 
 ## 优化总结
-
-
+- 面对低端的设备可以将UE4默认的延迟渲染改为正向渲染。虽然正向渲染会因为反射、照明和阴影而导致丧失视觉保真，但剩余的场景从视觉上看没有改变，而性能的提高。
+- 为staticmesh 添加Lod。
+- Mesh Instance（类似批处理） 合并场景中的数量多的网格，减少Drawcall。可以代码中生成，也可以通过UE4植被编辑器创建。
+- Mesh Instance 的物品的任何部分被渲染，那么整个集合都会被渲染。如果任何部分离开镜头，那么这会浪费潜在的吞吐量。建议在更小的区域内使用单一实例化网格集。
+- 根据需要调整级联阴影贴图的等级。
+- 即使完全透明的游戏对象也会用到渲染绘制调用。为避免这些调用浪费，可设置引擎停止对它们的渲染。
 
 ## 最终效果(40Fps-70Fps)
 
 ![](http://mingchuan.wang/img/ProjectWing/3.png)
 
 ![](http://mingchuan.wang/img/ProjectWing/1.png)
+
+## 参见
+- https://docs-origin.unrealengine.com/latest/INT/Engine/Performance/index.html
+- https://software.intel.com/zh-cn/articles/unreal-engine-4-optimization-tutorial-part-1
 
