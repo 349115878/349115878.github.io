@@ -3,7 +3,7 @@ layout:     post
 title:      My Indie Game Diary 第二篇
 subtitle:   3dmax导出高模低模(到Substance Painter烘焙)流程
 date:       2018-2-2
-author:     Trum
+author:     Trump
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
