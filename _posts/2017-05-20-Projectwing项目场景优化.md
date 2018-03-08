@@ -3,7 +3,7 @@ layout:     post
 title:      ProjectWing 性能优化
 subtitle:   性能优化
 date:       2017-5-20
-author:     Trum
+author:     Trump
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
