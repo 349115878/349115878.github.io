@@ -81,7 +81,7 @@ GPU分析
 
 
 
-## 最终效果(35Fps-70Fps)
+## 最终效果(40Fps-70Fps)
 
 ![](http://mingchuan.wang/img/ProjectWing/3.png)
 
