@@ -3,7 +3,7 @@ layout:     post
 title:      My Indie Game Diary 第三篇
 subtitle:   Substance Painter烘焙贴图流程
 date:       2018-2-18
-author:     Trum
+author:     Trump
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
