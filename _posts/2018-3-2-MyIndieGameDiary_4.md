@@ -3,7 +3,7 @@ layout:     post
 title:      My Indie Game Diary 第四篇
 subtitle:   3dmax 骨骼导入UE4
 date:       2018-3-2
-author:     Trum
+author:     Trump
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
