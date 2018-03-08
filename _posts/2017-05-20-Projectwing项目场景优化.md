@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      ProjectWing 性能优化
+title:      ProjectWing 性能优化
 subtitle:   性能优化
 date:       2017-5-20
 author:     Trump
@@ -78,6 +78,8 @@ GPU分析
 
 室内灯光优化：为了凸显室内物品材质的效果（这是需求的重点），优化过程中一是在不减弱效果的同时通过减少灯光数量，调整调整光照强度和光照衰减半径来优化，尽量的达到照片级别效果！
 
+
+## 优化总结
 
 
 
