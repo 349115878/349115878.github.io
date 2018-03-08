@@ -84,8 +84,10 @@ GPU分析
 - 为staticmesh 添加Lod。
 - Mesh Instance（类似批处理） 合并场景中的数量多的网格，减少Drawcall。可以代码中生成，也可以通过UE4植被编辑器创建。
 - Mesh Instance 的物品的任何部分被渲染，那么整个集合都会被渲染。如果任何部分离开镜头，那么这会浪费潜在的吞吐量。建议在更小的区域内使用单一实例化网格集。
-- 根据需要调整级联阴影贴图的等级。
+- 根据需要调整级联阴影贴图的等级，一般5将低到3可以。
 - 即使完全透明的游戏对象也会用到渲染绘制调用。为避免这些调用浪费，可设置引擎停止对它们的渲染。
+- 对于动态的物体，平行光可以 UseInsetShadowsForMovableObjects 设为 false，提高性能但是阴影效果下降，不适用与本项目。
+
 
 ## 最终效果(40Fps-70Fps)
 
@@ -96,4 +98,5 @@ GPU分析
 ## 参见
 - https://docs-origin.unrealengine.com/latest/INT/Engine/Performance/index.html
 - https://software.intel.com/zh-cn/articles/unreal-engine-4-optimization-tutorial-part-1
+- http://gad.qq.com/program/translateview/7160166
 
