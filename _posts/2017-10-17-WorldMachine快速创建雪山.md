@@ -3,7 +3,7 @@ layout:     post
 title:      WorldMachine 快速实现雪山
 subtitle:   WorldMachine
 date:       2017-10-17
-author:     Trum
+author:     Trump
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
