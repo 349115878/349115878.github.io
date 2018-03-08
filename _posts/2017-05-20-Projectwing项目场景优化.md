@@ -36,16 +36,18 @@ Demo视频展示(pc演示效果更好)： https://pan.baidu.com/s/1AUowCtVkLiLgB
 
 ![](http://mingchuan.wang/img/ProjectWing/5.png)
 
-##启动项目
+## 启动项目
 - 烘焙资源（烘焙后资源将放在Game/Save/下，资源数据被引擎优化处理，防止被不必要的资源影响）；
 - 设置为独立应用运行 (PIE)，这样可以让编辑器菜单逻辑和其他代码在分析记录中就不会出现。
 
 现象1：在飞机起飞的时候帧率下降比较大如下图：
 
 - 静止
+
 ![](http://mingchuan.wang/img/ProjectWing/7.png)
 
 - 起飞
+
 ![](http://mingchuan.wang/img/ProjectWing/8.png)
 
 从屏幕上的stat信息可以看出，GPU 时间 更接近 Frame time，所以游戏瓶颈是出在GPU渲染上。即使这样瓶颈是GPU渲染上，但是我也是出于好奇，看看GameThread
