@@ -23,10 +23,54 @@ Project项目是为意大利 Agusta-westland 直升机厂商定制的 AW609型�
 
 Demo视频展示(pc演示效果更好)： https://pan.baidu.com/s/1AUowCtVkLiLgB__AddRU1A
 
-本文只介绍场景性能优化方面的经历，OK，那就开始吧！
+本文只介绍场景性能优化方面的经历。
+
+# 概述
+
+性能优化不是一成不变，根据优化的项目需求，平台资源的不同将会有所侧重，同时帧数过高过低都不是目标，这都需要根据项目的需要而定。ProjectWing这个项目定义为飞行演示，所以美术效果表现是首要的，其次指定的PC平台上帧数控制在30帧以上，演示的时候没有特别明显的卡顿就可以了。
+
+首先明确优化为了达到Fps目标，利用毫秒描述可以更好的量化，更直观，比如：
+该表显示了平均 fps 和 ms之间的关系
+
+![](http://mingchuan.wang/img/ProjectWing/5.png)
+
+启动有项目
+- 烘焙资源（烘焙后资源将放在Game/Save/下，资源数据被引擎优化处理，防止被不必要的资源影响）；
+- 设置为独立应用运行 (PIE)，这样可以让编辑器菜单逻辑和其他代码在分析记录中就不会出现。
+
+现象1：在飞机起飞的时候帧率下降比较大如下图：
+
+- 静止
+![](http://mingchuan.wang/img/ProjectWing/7.png)
+
+- 起飞
+![](http://mingchuan.wang/img/ProjectWing/8.png)
+
+从屏幕上的stat信息可以看出，GPU 时间 更接近 Frame time，所以游戏瓶颈是出在GPU渲染上。即使这样瓶颈是GPU渲染上，但是我也是出于好奇，看看GameThread
+上到底发生了什么，可不可以进一步优化呢？所以在下面对CPU进行了"强行分析"...
+
+CPU分析
+
+启动项目，在这里我选择了在飞机起飞的时候一段采集数据，打开Session Frontend，点击Data Capture开始抓取数据，再次点击停止。
+
+完成之后，点Load file（数据采集 文件保存在下列路径中 ...\UE4\Engine\Programs\UnrealFrontend\Saved\Profiling\UnrealStats\Received\...）查看结果如图：
+
+![](http://mingchuan.wang/img/ProjectWing/6.png)
+
+从上图看出如下信息：
+- 1.landscapeMap（我们的场景Map文件）中的Grass_Update是消耗最多的（当然上面还有PoolThread 22.989ms，这个是等待线程，分析无意义）。这个UE4中的植被系统，在场景中一个如图棵树：
+
+![](http://mingchuan.wang/img/ProjectWing/9.png)
+
+UE4中的植被系统生成的植被会用了MeshInstance生成了一个实例（类似于Unity的批处理）。所以那就看LOD惊奇的发现树的Lod虽然设了但是ScreanSize
+都是0.没用啊。这个树居然是UE4官方带的（也有可能是那个人故意这样设置的显示远景）。所以更改了一下设置。
+
+- 2.图中PlayController下的BP_AW609v2_InpAxisEvent,是飞机起飞的时候螺旋桨转动事件。这是不可避免的。下面的MoveForward，LookUp等都是一样的。
 
 
 
+
+# 
 
 
 # ProjectWing性能优化
