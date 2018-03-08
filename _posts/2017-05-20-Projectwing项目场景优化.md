@@ -102,5 +102,4 @@ UE4中的植被系统生成的植被会用了MeshInstance生成了一个实例�
 ## 参见
 - https://docs-origin.unrealengine.com/latest/INT/Engine/Performance/index.html
 - https://software.intel.com/zh-cn/articles/unreal-engine-4-optimization-tutorial-part-1
-- http://gad.qq.com/program/translateview/7160166
 
