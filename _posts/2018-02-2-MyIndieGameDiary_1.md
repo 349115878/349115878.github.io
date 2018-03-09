@@ -24,4 +24,8 @@ tags:
 ![](http://mingchuan.wang/img/MyIndieGameDiary/3.png)
 ![](http://mingchuan.wang/img/MyIndieGameDiary/6.png)
 
+- WorldMachine 完整节点
+
+![](http://mingchuan.wang/img/MyIndieGameDiary/7.png)
+
 这部分内容很多，需要写的东西太多，本人有时间再跟新，哈哈哈~~~~~
