@@ -57,3 +57,11 @@ tags:
 导入UE4 选项,选中刚刚导入的Skeleton Mesh
 
 ![](http://mingchuan.wang/img/MyIndieGameDiary_4/11.png)
+
+## 更换材质贴图后效果图
+
+可以动了！！！
+
+![](http://mingchuan.wang/img/MyIndieGameDiary_4/12.png)
+
+
