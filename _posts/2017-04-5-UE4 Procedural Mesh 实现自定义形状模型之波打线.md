@@ -54,4 +54,4 @@ tags:
 
 ![](http://mingchuan.wang/img/boundary/show_2.png)
 
-图片来源于Vidahouse
+图片来源于Vidahouse侵权删。
