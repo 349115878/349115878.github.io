@@ -125,5 +125,5 @@ UE4 中：
 
 ![](http://mingchuan.wang/img/MyIndieGameDiary_3/21.png)
 
-注：由于小怪还在修改过程中，有很多地方需要完善，源文件先不分享了...
+
 
