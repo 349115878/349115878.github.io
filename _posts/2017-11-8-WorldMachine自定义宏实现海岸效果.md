@@ -10,7 +10,7 @@ tags:
 - WorldMachine
 ---
 
-# WorldMachine 自定义宏
+# WorldMachine 自定义宏实现海岸效果
 ## 效果图
 
 ![](http://mingchuan.wang/img/WM_Beach/1.png)
