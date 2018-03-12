@@ -78,4 +78,4 @@ raw_face_struct raw_faces[] =
 
 ![](http://mingchuan.wang/img/Line/Line_7.png)
 
-图片来源：Vidahouse
+图片来源于Vidahouse侵权删。
