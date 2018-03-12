@@ -65,3 +65,4 @@ tags:
 ![](http://mingchuan.wang/img/MyIndieGameDiary_4/12.png)
 
 
+版权声明：本文为博主原创文章，未经博主允许不得转载。
