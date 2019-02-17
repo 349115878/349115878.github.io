@@ -14,7 +14,7 @@ tags:
 # Maya custom marking menu
 
 
-![](http://mingchuan.wang/img/MayaMarking Menu/Image 2.png)
+![](http://mingchuan.wang/img/MayaMarkingMenu/Image 2.png)
 
 
 mel：
