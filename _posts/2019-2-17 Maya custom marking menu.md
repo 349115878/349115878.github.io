@@ -1,14 +1,13 @@
 ---
 layout:     post
-title:      My Indie Game Diary 第四篇
-subtitle:   3dmax 骨骼导入UE4
-date:       2018-3-2
-author:     Trump
+title:      Maya custom marking menu
+subtitle:   marking menu
+date:       2019-2-17
+author:     wmc
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
 - 3dmax
-- UE4
 ---
 
 
