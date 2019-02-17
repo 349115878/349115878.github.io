@@ -13,6 +13,10 @@ tags:
 
 # Maya custom marking menu
 
+
+![](http://mingchuan.wang/img/MayaMarking Menu/Image 2.png)
+
+
 mel：
 C:\Users\wmc\Documents\maya\2018\prefs\markingMenus\menu_Yee
 
