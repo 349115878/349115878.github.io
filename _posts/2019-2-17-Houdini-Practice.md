@@ -13,6 +13,10 @@ tags:
 
 # Houdini Practice
 
+Nebula
+
+![](http://mingchuan.wang/img/Nebula.png)
+
 Terrain
 
 ![](http://mingchuan.wang/img/terrain_1.png)
