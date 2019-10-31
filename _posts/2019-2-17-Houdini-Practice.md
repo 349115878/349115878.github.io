@@ -13,14 +13,18 @@ tags:
 
 # Houdini Practice
 
+Terrain
 
 ![](http://mingchuan.wang/img/terrain_1.png)
 
 ![](http://mingchuan.wang/img/terrain_2.png)
 
+Procedural Mesh
+
+Stairs
 ![](http://mingchuan.wang/img/stairs.gif)
 
-![](http://mingchuan.wang/img/stairs_1.gif)
+![](http://mingchuan.wang/img/stairs_1.png)
 
 
 
