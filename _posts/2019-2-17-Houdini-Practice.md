@@ -1,17 +1,17 @@
 ---
 layout:     post
-title:      Maya custom marking menu
-subtitle:   marking menu
+title:      Houdini Practice
+subtitle:   Houdini 
 date:       2019-2-17
 author:     wmc
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
-- 3dmax
+- Houdini
 ---
 
 
-# Maya custom marking menu
+# Houdini Practice
 
 
 ![](http://mingchuan.wang/img/MayaMarkingMenu/Image_1.png)
