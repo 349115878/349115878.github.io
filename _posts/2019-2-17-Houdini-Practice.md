@@ -13,6 +13,14 @@ tags:
 
 # Houdini Practice
 
+Asteroid
+
+![](http://mingchuan.wang/img/Houdini_Asteroid.png)
+
+Procedural City
+
+![](http://mingchuan.wang/img/Houdini_City_python.png)
+
 Nebula
 
 ![](http://mingchuan.wang/img/Nebula.png)
