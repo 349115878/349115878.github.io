@@ -15,6 +15,8 @@ tags:
 
 Asteroid
 
+![](http://mingchuan.wang/img/Houdini_Asteroid_2.gif)
+
 ![](http://mingchuan.wang/img/Houdini_Asteroid_1.png)
 
 Mantra rendering：
