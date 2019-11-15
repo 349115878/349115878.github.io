@@ -19,7 +19,7 @@ Asteroid
 
 Mantra rendering：
 
-![](http://mingchuan.wang/img/Houdini_Asteroid_1.png)
+![](http://mingchuan.wang/img/Houdini_Asteroid.png)
 
 Procedural City
 
