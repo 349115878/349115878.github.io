@@ -15,11 +15,21 @@ tags:
 
 Asteroid
 
+![](http://mingchuan.wang/img/Houdini_Asteroid_1.png)
+
+Mantra rendering：
+
 ![](http://mingchuan.wang/img/Houdini_Asteroid.png)
 
 Procedural City
 
 ![](http://mingchuan.wang/img/Houdini_City_python.png)
+
+reference:
+
+https://app.pluralsight.com/library/courses/houdini-python-procedural-cities
+
+https://www.bilibili.com/video/av20882458?from=search&seid=3304436440502652313
 
 Nebula
 
