@@ -13,6 +13,12 @@ tags:
 
 # Houdini Practice
 
+Rock
+
+![](http://mingchuan.wang/img/Procedural_Rock.gif)
+
+![](http://mingchuan.wang/img/Procedural_Rock_main.png)
+
 Asteroid
 
 ![](http://mingchuan.wang/img/Houdini_Asteroid_2.gif)
