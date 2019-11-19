@@ -17,6 +17,8 @@ Rock
 
 ![](http://mingchuan.wang/img/Procedural_Rock.gif)
 
+![](http://mingchuan.wang/img/Procedural_Rock_1.gif)
+
 ![](http://mingchuan.wang/img/Procedural_Rock_main.png)
 
 Asteroid
